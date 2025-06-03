@@ -1,0 +1,133 @@
+{
+    "translateFrom": {
+      "message": "Translate from"
+    },
+    "translateIn": {
+      "message": "Translate in"
+    },
+    "translateInto": {
+      "message": "Translate into"
+    },
+    "translate": {
+      "message": "translate"
+    },
+    "from": {
+      "message": "from"
+    },
+    "to": {
+      "message": "to"
+    },
+    "in": {
+      "message": "in"
+    },
+    "into": {
+      "message": "into"
+    },
+    "default": {
+      "message": "default"
+    },
+    "default__smallcase": {
+      "message": "ᴅᴇғᴀᴜʟᴛ"
+    },
+    "try": {
+      "message": "try"
+    },
+    "buy": {
+      "message": "buy"
+    },
+    "buyNow": {
+      "message": "Buy a license"
+    },
+    "buyLicense": {
+      "message": "Buy a license"
+    },
+    "buyLicenseNow": {
+      "message": "Buy a license now?"
+    },
+    "syncLicense": {
+      "message": "Link existing license"
+    },
+    "registerLicense": {
+      "message": "Register your license"
+    },
+    "dontShowAnymore": {
+      "message": "Don't show anymore"
+    },
+    "showHelp": {
+      "message": "Show help & tips"
+    },
+    "helpAndTips": {
+      "message": "Help and tips"
+    },
+    "goHelp": {
+      "message": "Open help & tips"
+    },
+    "tryLoveBuy": {
+      "message": "Try > ♥ > Buy"
+    },
+    "ohYeah": {
+      "message": "Oh yeah!"
+    },
+    "ohNo": {
+      "message": "Oh no!"
+    },
+    "supportMessage": {
+      "message": "If you like Bar Translate, buy a license to support my work"
+    },
+    "close": {
+      "message": "Close"
+    },
+    "autoClose": {
+      "message": "Auto-close in $COUNTER$s",
+      "placeholders": {
+        "COUNTER" : {
+          "content" : "$1"
+        }
+      }
+    },
+    "cancelAutoClose": {
+      "message": "Cancel auto close ($COUNTER$s)",
+      "placeholders": {
+        "COUNTER" : {
+          "content" : "$1"
+        }
+      }
+    },
+    "openInNewTab": {
+      "message": "$VALUE$ ↗",
+      "placeholders": {
+        "VALUE" : {
+          "content" : "$1"
+        }
+      }
+    },
+    "translateSelection": {
+      "message": "Translate \"%s\" in $LANGUAGE$",
+      "placeholders": {
+        "LANGUAGE" : {
+          "content" : "$1"
+        },
+        "SERVICE" : {
+          "content" : "$2"
+        }
+      }
+    },
+    "detected__smallcase": {
+      "message": "ᴅᴇᴛᴇᴄᴛᴇᴅ"
+    },
+    "translatedBy__smallcase": {
+      "message": "ᴛʀᴀɴsʟᴀᴛᴇᴅ ʙʏ"
+    },
+    "copyToClipboard": {
+      "message": "Copy to clipboard"
+    },
+    "selectWithArrowKeys": {
+      "message": "you can use the 🠙🠛 keyboard arrows"
+    },
+    "weirdResult": {
+      "message": "Same result"
+    },
+    "retrying": {
+      "message": "Retrying"
+    }
+}

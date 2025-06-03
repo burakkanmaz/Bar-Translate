@@ -1,0 +1,42 @@
+{
+  "name": "bar-translate",
+  "version": "2.0.0",
+  "description": "",
+  "scripts": {
+    "watch": "npm run pre-watch && parcel watch src/background.js src/options.jsx src/popup.html --dist-dir dist --no-hmr",
+    "build": "npm run pre-build && parcel build src/background.js src/options.jsx src/popup.html --dist-dir dist --no-source-maps && npm run copy-images && npm run copy-locales && npm run copy-static && npm run post-build",
+    "pre-watch": "npm run clean-dist && npm run copy-dev-manifest && npm run copy-hot-reload",
+    "pre-build": "npm run clean-dist && npm run copy-prod-manifest",
+    "clean-dist": "rimraf .\\dist\\**\\*",
+    "copy-prod-manifest": "copy .\\src\\manifest.production.json .\\dist\\manifest.json",
+    "copy-dev-manifest": "copy .\\src\\manifest.dev.json .\\dist\\manifest.json",
+    "copy-hot-reload": "copy .\\src\\hot-reload.js .\\dist",
+    "post-build": "npm run zip-build",
+    "zip-build": "mkdir release && cross-zip ./dist ./release/bar-translate.zip",
+    "copy-images": "xcopy src\\images dist\\images /E /Y /I",
+    "copy-locales": "xcopy src\\_locales dist\\_locales /E /Y /I",
+    "copy-static": "copy src\\options.html dist\\options.html && copy src\\help.html dist\\help.html"
+  },
+  "staticPath": {
+    "source": [
+      "src/_locales",
+      "src/images",
+      "src/help.html"
+    ],
+    "target": [
+      "dist/_locales",
+      "dist/images",
+      "dist/help.html"
+    ]
+  },
+  "author": "Burak Kanmaz",
+  "license": "GNU AGPL",
+  "dependencies": {
+    "preact": "^10.26.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "cross-zip-cli": "^1.0.0",
+    "parcel": "^2.15.2"
+  }
+}

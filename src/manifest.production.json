@@ -1,0 +1,43 @@
+{
+  "name": "Bar Translate",
+  "description": "Jump to the address bar, type 't', press space or tab, and start typing things like 'fr Hello' or 'en Bonjour'",
+  "version": "2.0.0",
+  "minimum_chrome_version": "88",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Bar Translate",
+    "default_popup": "popup.html"
+  },
+  "default_locale": "en",
+  "permissions": [
+    "contextMenus",
+    "notifications",
+    "storage",
+    "scripting",
+    "activeTab",
+    "tabs",
+    "omnibox"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "icons": {
+    "16": "images/icon.png",
+    "24": "images/icon@1.5x.png",
+    "32": "images/icon@2x.png",
+    "64": "images/icon@3x.png",
+    "48": "images/icon@4x.png",
+    "80": "images/icon@5x.png",
+    "96": "images/icon@6x.png",
+    "128": "images/thumb-128.png",
+    "256": "images/thumb-256.png"
+  },
+  "omnibox": { "keyword": "t" },
+  "manifest_version": 3,
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  }
+}
