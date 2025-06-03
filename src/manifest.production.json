@@ -15,14 +15,10 @@
     "contextMenus",
     "notifications",
     "storage",
-    "scripting",
     "activeTab",
-    "tabs",
     "omnibox"
   ],
-  "host_permissions": [
-    "<all_urls>"
-  ],
+  "host_permissions": [],
   "icons": {
     "16": "images/icon.png",
     "24": "images/icon@1.5x.png",

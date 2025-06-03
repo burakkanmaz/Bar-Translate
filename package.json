@@ -12,7 +12,7 @@
     "copy-dev-manifest": "copy .\\src\\manifest.dev.json .\\dist\\manifest.json",
     "copy-hot-reload": "copy .\\src\\hot-reload.js .\\dist",
     "post-build": "npm run zip-build",
-    "zip-build": "mkdir release && cross-zip ./dist ./release/bar-translate.zip",
+    "zip-build": "rimraf release && mkdir release && cross-zip ./dist ./release/bar-translate.zip",
     "copy-images": "xcopy src\\images dist\\images /E /Y /I",
     "copy-locales": "xcopy src\\_locales dist\\_locales /E /Y /I",
     "copy-static": "copy src\\options.html dist\\options.html && copy src\\help.html dist\\help.html"
