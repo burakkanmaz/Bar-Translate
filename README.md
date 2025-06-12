@@ -12,7 +12,7 @@ Bar Translate is a modern Chrome extension that allows you to translate anything
 - Comprehensive settings and help page
 
 ## Installation
-1. [Install from Chrome Web Store](https://chrome.google.com/webstore/) *(will be updated after approval)*
+1. [Install from Chrome Web Store](https://chromewebstore.google.com/detail/bar-translate/njoclonlfcipifgdgnmclomppgljnbip)
 2. Type `t` in the address bar, press `Tab` or `Space`, and enter the text you want to translate.
 3. Check `options` to change the languages.
 
